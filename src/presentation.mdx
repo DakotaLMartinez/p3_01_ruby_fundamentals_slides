@@ -1,8 +1,309 @@
 import TerminalCommand from "./components/TerminalCommand";
 
 
-# MDXP
+# Ruby Fundamentals
 
-Write your slide deck here...
+<Note>
+
+Hey everyone! My name is Dakota Martinez and I'll be your lecturer for phase 3. I came into the coding world via the world of music. While I did have a bit of exposure to programming in high school and college, I didn't start pursuing a career in earnest until I learned more about the open source community. 
+
+I was working as an office manager for a small startup in the music business and they had previously built a website to sell their products, but at the time we didn't have anyone on staff who knew how to update it.
+
+So, I started teaching myself some html, css & javascript, trying things out, searching through blog posts and YouTube videos and got really excited about code. A friend turned me onto Codecademy, I took part in one of their beta programs, learned some more, did some freelance work and decided to level up my skills further by enrolling in a coding bootcamp. I learned enough to update the company's website, adding new product and marketing pages and eventually integrating our order system with shipping software to help with order fulfillment. I started to feel like all of the time I was spending on tasks not related to learning more about tech was just filler. I've always had a passion for learning, growth and education, both as a student and as a teacher. At that point, I was working part time as a tutor for beginning web developers while working part time in the office and freelancing on the side. So, when I got the chance to take on a full time role focusing on education in tech, I jumped at it. I taught a summer immersive program for high school students with Girls Who Code and shortly thereafter came into a full time role at Flatiron. I've been teaching new developers how to code ever since!  
+
+One of my favorite things about teaching web development is how many different ways I've seen people use this knowledge express their personalities, building projects that celebrate their individual passions, hobbies, and ambitions. So, I'm excited to be along for the ride with y'all and see what you build!
+
+</Note>
 
 ---
+
+<!-- Begin Slide -->
+
+## What is Lecture all about?
+
+<Note>
+
+The purpose of lecture is to review concepts from homework and to see them applied to an application. Sometimes we will make decisions that are tailored to our specific application that we're building. Our goal is to build a higher level understanding of how the concepts for the day fit into your larger learning journey. Each day, we'll be applying our knowledge to add functionality to our application or to do a refactor to the application based on a new concept that has been introduced. 
+
+Again, the main purpose of lecture is to demonstrate how the ideas introduced in the curriculum can be applied to a codebase as it evolves.
+
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+
+</Note>
+
+<!-- End Slide -->
+
+--- 
+
+<!-- Begin Slide -->
+
+## Objectives in Phase 3
+
+<Step>
+
+* Understand the principles of Ruby as a language including principles of object oriented programming
+* Understand the characteristics of a relational database
+* Perform CRUD actions with a database using Active Record
+* Design an API to handle CRUD actions
+* Communicate with an API using different HTTP verbs
+* Create and present a project with a React frontend and a database-backed API backend
+
+
+</Step>
+
+<Note>
+
+Use Arrows to expand:
+
+* Understand the principles of Ruby as a language including principles of object oriented programming
+* Understand the characteristics of a relational database
+* Perform CRUD actions with a database using Active Record
+* Design an API to handle CRUD actions
+* Communicate with an API using different HTTP verbs
+* Create and present a project with a React frontend and a database-backed API backend
+
+If that sounds like a lot, it is! It's important to note going into this phase that we're introducing a lot of concepts that you will continue to apply throughout the rest of your journey. Some of them will be more immediately relevant to you than others, and another purpose of lecture is to identify and solidify the concepts that are most important for you to master in the near future.
+
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+
+</Note>
+
+<!-- End Slide -->
+
+--- 
+
+<!-- Begin Slide -->
+
+## Lectures
+
+1. Ruby Fundamentals
+2. Object Oriented Ruby pt1 ([slides](https://p3-02-object-oriented-ruby-part1-slides.netlify.app/#/normal/0/0))
+3. Object Oriented Ruby pt2 ([slides](https://p3-03-object-oriented-ruby-part-2-slides.netlify.app/#/normal/0/0))
+4. Intro to Databases ([slides](https://p3-04-intro-to-databases-slides.netlify.app/#/normal/0/0))
+5. Intro to ActiveRecord ([slides](https://p3-05-intro-to-databases-slides.netlify.app/#/normal/0/0))
+6. ActiveRecord Associations: Many to Many ([slides](https://p3-06-activerecord-associations-many-to-many-slides.netlify.app/#/normal/0/0))
+7. Debugging in Ruby (code challenge prep)
+8. Intro to Sinatra (after code challenge) ([slides](https://p3-08-intro-to-sinatra-slides.netlify.app/#/normal/0/0))
+9. Sinatra API CRUD with relationships
+
+<Note>
+
+
+
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+
+</Note>
+
+<!-- End Slide -->
+
+--- 
+
+<!-- Begin Slide -->
+
+## Lecture Format
+
+Lectures will be split into 3 portions, with a 5 minute break in between.
+- Part 1: Discussion of concepts and what kinds of functionality they related to
+- Part 2: Demo of how to apply concepts from labs and lessons to our dog walker application
+- Part 3: Question/Answer period 
+
+<Note>
+
+
+
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+
+</Note>
+
+<!-- End Slide -->
+
+--- 
+
+<!-- Begin Slide -->
+
+## Recommended VSCode extensions
+
+- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+- [VSCode Ruby](https://marketplace.visualstudio.com/items?itemName=wingrunr21.vscode-ruby)
+- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+- [Tabnine](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
+
+<Note>
+
+Here I want to share some of the VSCode extensions that I have installed that may affect what you see on my screen. 
+
+- GitLens (for expanded functionality in the source control tab of VSCode so that commits and branches are visible with a visual diff tool)
+- Ruby/VSCode Ruby for syntax highlighting and snippet expansion
+- Draw.io Integration for creating diagrams from right within VSCode
+- Tabnine for AI based autocomplete
+
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+
+</Note>
+
+<!-- End Slide -->
+
+--- 
+
+<!-- Begin Slide -->
+
+## Dog Walker Application
+
+![Dog Walker App Demo](https://res.cloudinary.com/dnocv6uwb/image/upload/v1627627105/dog-walker-app-demo-13fps_nwstsn.gif)
+
+<Note>
+
+Here's a gif demonstrating the application we're going to build throughout the course of this phase. We'll be building a dog walking application where users can add dogs to the application, edit and delete those dogs and take them on walks. We'll be mainly focused on the backend functionality required to support this client side application that we take a look at it in the final lectures of the phase.
+
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+
+</Note>
+
+<!-- End Slide -->
+
+--- 
+
+<!-- Begin Slide -->
+
+## But First!
+
+![Dog Walker CLI Demo](https://res.cloudinary.com/dlzuobe8h/image/upload/v1652720747/phase3/dog-walker-cli_uepg1a.gif)
+
+<Note>
+
+Because we're covering a lot of ground in this phase, it won't make sense to start building the final application from day 1. Instead, we're going to be building a special type of application often created for use by other developers called a CLI (short for command line interface). We'll be using this interface as a way of interacting with the code that we write and demonstrating that our application can track dogs and their walks without having a browser based application.
+
+This gif outlines the functionality that we're going for by the end of today.
+
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+
+</Note>
+
+<!-- End Slide -->
+
+--- 
+
+<!-- Begin Slide -->
+
+## Lecture Topics
+
+- Variables
+- Methods
+- Conditionals
+- Arrays
+- Hashes
+- puts
+- binding.pry
+
+<Note>
+
+This is a list for your reference of the key ruby topics that we'll be applying to build the bones of our CLI application today.
+
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+
+</Note>
+
+<!-- End Slide -->
+
+--- 
+
+<!-- Begin Slide -->
+
+## File Structure
+
+![Dog Walker CLI File Structure](https://res.cloudinary.com/dlzuobe8h/image/upload/v1652722608/phase3/Screen_Shot_2022-05-16_at_10.36.29_AM_zqjups.png)
+
+Let's take a quick look at: Gemfile, config/environment.rb, bin/run, lib/dogs.rb, and finally lib/dog_walker_cli.rb
+<Note>
+
+At this point, stop sharing just the slideshow and share the entire screen in preparation to get into the code.
+
+----
+----
+----
+----
+----
+----
+----
+----
+----
+----
+
+</Note>
+
+<!-- End Slide -->
+
+--- 
